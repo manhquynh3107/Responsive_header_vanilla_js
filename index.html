@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fullscreen Animated Sticky Header</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="images/bg.jpg" class="banner" alt="">
+        <a href="#" class="logo">#QNS</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Creative Fullscreen Sticky Header</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus aliquam maxime at neque ipsa, ea eum, reiciendis saepe voluptate consectetur earum laborum molestiae? Sed, fugiat autem esse voluptatum minima vitae!
+            </p>
+    </section>
+    <script>
+        window.addEventListener("scroll",function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+
+        const navigation = document.querySelector('nav')
+        document.querySelector('.toggle').onclick = function(){
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
